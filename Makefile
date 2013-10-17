@@ -10,8 +10,6 @@ DATE=`LANG=C date '+%a, %d %b %Y %I:%M:%S %z'`
 
 all: fpm
 
-chef11.tgz:
-	wget http://staff.0x50.net/~aga/chef/omnibus-chef11/$@
 
 ${WORK_DIR}: chef_${VERSION_DEBIAN}_amd64.deb
 	mkdir -p ${WORK_DIR}
